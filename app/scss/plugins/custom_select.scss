@@ -1,0 +1,93 @@
+.select_wrap{
+    width: calc(33% - 20px);
+    min-width: 200px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .select_wrap .default_option{
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid $gold_1;
+    // border-color: $gold_1;
+  }
+  
+  .select_wrap .default_option li{
+      padding: 3px 0px;
+  }
+  
+  .select_wrap .default_option:before{
+      content: "";
+        position: absolute;
+        right: 0px;
+        top: 14px;
+        height: 10px;
+        width: 10px;
+        border: 2px solid;
+        border-color: transparent transparent $gold_1 $gold_1;
+        transform: rotate(-45deg);
+  }
+  
+  .select_wrap .select_ul{
+    position: absolute;
+    top: 53px;
+    left: 0;
+    width: 100%;
+    background: $background;
+    display: none;
+    font-size: 20px;
+  }
+  
+  .select_wrap .select_ul li{
+    padding: 0px 0px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .select_wrap .select_ul li:hover{
+    background: lighten($background, 5%);
+  }
+  
+  .select_wrap .option{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    color: $text_light;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  
+  .select_wrap .option .icon{
+    background: url('https://i.imgur.com/oEZu0sK.png') no-repeat 0 0;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+  }
+  
+  .select_wrap .option.pizza .icon{
+    background-position: 0 0;
+  }
+  
+  .select_wrap .option.burger .icon{
+    background-position:  0 -35px;
+  }
+  
+  .select_wrap .option.ice .icon{
+    background-position: 0 -72px;
+  }
+  
+  .select_wrap .option.fries .icon{
+   background-position: 0 -111px;
+    width: 25px;
+  }
+  
+  .select_wrap.active .select_ul{
+    display: block;
+  }
+  
+  .select_wrap.active .default_option:before{
+    top: 25px;
+    transform: rotate(-225deg);
+  }

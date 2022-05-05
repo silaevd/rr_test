@@ -1,0 +1,18 @@
+.filter {
+    padding: 190px;
+    background-color: $background;
+    &__title {
+        font-family: 'Roboto';
+        color: $text_light;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 58px;
+    }
+    &__form {
+        &-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

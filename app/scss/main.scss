@@ -2,9 +2,14 @@
 @import 'fonts';
 @import 'colors';
 
+//Plugins
+@import './plugins/select-boxes.scss';
+@import './plugins/custom_select.scss';
+
 //Parts
 @import './parts/header.scss';
 @import './parts/slider.scss';
+@import './parts/filter.scss';
 
 html {
     box-sizing: border-box;

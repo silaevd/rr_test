@@ -20,6 +20,9 @@
             font-family: "Noto Serif Display";
             font-size: 56px;
             color: $gold_1;
+            background: linear-gradient(101.83deg, #DABE83 -39.95%, #C9792F 162.7%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-weight: 600;
             text-transform: uppercase;
             line-height: 76px;
@@ -48,6 +51,7 @@
             font-size: 16px;
             line-height: 22px;
             margin-bottom: 50px;
+            padding-left: 30px;
         }
         &-link {
             font-family: 'Source Sans Pro';
@@ -58,6 +62,7 @@
             text-decoration: none;
             cursor: pointer;
             opacity: 0.5;
+            padding-left: 30px;
             img {
                 fill: $text_light;
                 padding-bottom: 2px;
