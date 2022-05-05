@@ -1,0 +1,136 @@
+.sliderplace {
+    position: relative;
+}
+.slider {    
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__item {
+        height: 100%;
+        padding-left: 5%;
+        background-image: url(../../img/slider_1.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__informations {
+        &-title {
+            font-family: "Noto Serif Display";
+            font-size: 56px;
+            color: $gold_1;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 76px;
+            letter-spacing: 0.04em;
+        }
+        &-subtitle {
+            font-family: "Roboto";
+            font-size: 24px;
+            color: $gold_1;
+            font-weight: 400;
+            line-height: 22px;
+            margin-bottom: 50px;
+            span {
+                display: inline-block;
+                width: 15px;
+                height: 2px;
+                background-color: $gold_1;
+                vertical-align: middle;
+                margin: 0 5px;
+            }
+        }
+        &-description {
+            font-family: 'Roboto';
+            color: $text_light;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 50px;
+        }
+        &-link {
+            font-family: 'Source Sans Pro';
+            color: $text_light;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: 0.5;
+            img {
+                fill: $text_light;
+                padding-bottom: 2px;
+            }
+        }
+    }
+}
+.tns-outer {
+    position: relative;
+}
+.tns-horizontal.tns-subpixel>.tns-item {
+    display: flex;
+}
+.tns-controls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    button {
+        width: 100px;
+        height: 100px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        transition: ease-in-out 220ms;
+    }
+    button[data-controls=next] {
+        background-image: url(../../img/svg/slider_next.svg);
+    }
+    button[data-controls=next]:disabled {
+        background-image: url(../../img/svg/slider_next_d.svg);
+    }
+    button[data-controls=prev] {
+        background-image: url(../../img/svg/slider_prev.svg);
+    }
+    button[data-controls=prev]:disabled {
+        background-image: url(../../img/svg/slider_prev_d.svg);
+    }
+}
+
+.srolldown {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    z-index: 11;
+    &__img {
+        margin-right: 10px;
+    }
+    &__text {
+        font-family: 'Roboto';
+        color: $gold_1;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        
+    }
+}
+.indication {
+    max-width: 300px;
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+    z-index: 11;
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+}
