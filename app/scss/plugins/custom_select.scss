@@ -6,10 +6,11 @@
   }
   
   .select_wrap .default_option{
-    background: transparent;
+    background: $background;
     position: relative;
     cursor: pointer;
     border-bottom: 1px solid $gold_1;
+    z-index: 2;
     // border-color: $gold_1;
   }
   
@@ -37,6 +38,7 @@
     background: $background;
     display: none;
     font-size: 20px;
+    z-index: 3;
   }
   
   .select_wrap .select_ul li{
@@ -55,8 +57,9 @@
     font-family: 'Roboto';
     color: $text_light;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 34px;
+    z-index: 99;
   }
   
   .select_wrap .option .icon{

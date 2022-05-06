@@ -13,6 +13,70 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            margin-bottom: 30px;
+            .input-range {
+                width: calc(33% - 20px);
+                min-width: 301px;
+                &__text {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 5px;
+                    align-items: center;
+                    p {
+                        font-family: 'Roboto';
+                        color: $text_gray;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 140%;
+                        span {
+                            color: $text_light;
+                        }
+                    }
+                    
+                }
+            }
+            .input-button {
+                width: calc(33% - 20px);
+                button {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    height: 100%;
+                    width: 100%;
+                    background: linear-gradient(101.83deg, #DABE83 -39.95%, #C9792F 162.7%);
+                    border-radius: 2px;
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+        &-paramlink {
+            font-family: 'Source Sans Pro';
+            color: $gold_1;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 22px;
+            text-decoration: none;
+            cursor: pointer;
+            background: linear-gradient(101.83deg, #DABE83 -39.95%, #C9792F 162.7%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            img {
+                vertical-align: middle;
+                width: 7px;
+                height: auto;
+                margin-left: 5px;
+            }
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: $gray2;
+            margin-bottom: 40px;
         }
     }
+    
 }

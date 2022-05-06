@@ -68,6 +68,14 @@ window.addEventListener("DOMContentLoaded", function () {
         $(".default_option li").html(currentele);
         $(this).parents(".select_wrap").removeClass("active");
       })
+
+
+      OmRangeSlider.init({ 
+        min: 0,
+        max: 100,
+        unit: ' Pcs.',
+      });
+
       
 
 })

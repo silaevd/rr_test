@@ -22,6 +22,7 @@ function scripts() {
 	return src([ 
 		'node_modules/jquery/dist/jquery.min.js',
 		'node_modules/tiny-slider/dist/min/tiny-slider.js',
+		'app/js/plugins/range-slider/range-slider.js',
 		'app/js/app.js',
 		])
 	.pipe(concat('app.min.js'))
