@@ -76,6 +76,9 @@ window.addEventListener("DOMContentLoaded", function () {
         unit: ' Pcs.',
       });
 
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800
+    });
       
 
 })

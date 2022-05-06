@@ -7,6 +7,7 @@ const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const cleancss = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
+const newer = require('gulp-newer');
 const del = require('del');
 
 //Browsersync
@@ -56,7 +57,7 @@ function buildcopy() {
 	return src([
 		'app/css/**/*.min.css',
 		'app/js/**/*.min.js',
-		'app/images/dest/**/*',
+		'app/img/**/*',
 		'app/**/*.html',
 		], { base: 'app' })
 	.pipe(dest('dist'))
